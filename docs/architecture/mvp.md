@@ -1,0 +1,3 @@
+#MVP
+
+MVP(Model-view-presenter) is an architecture pattern used in mobile development for...
