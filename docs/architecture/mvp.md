@@ -1,6 +1,5 @@
 #MVP
 
-MVP(Model-view-presenter) is an architecture pattern used in mobile development for...
 
 ###Short introduction
 MVP is an architectural pattern widely used for developers when working on user interfaces. Its main concept resides in separating all the logic in three components:
@@ -28,3 +27,10 @@ First of all, let's talk about the last item. For us, the real model will be all
 It's almost guaranteed that this will be a [Retrofit REST client](http://square.github.io/retrofit/). This should be classes who are responsible to make the requests to the servers and retrieve the information as a java object. We usually code them as [singletons](https://en.wikipedia.org/wiki/Singleton_pattern), it's better if you see this for yourself in the DemoApp or AndroidTraining.
 
 ####Request and response POJOs
+We define this classes as dumb data bags. They are only used to represent the responses|requests from the servers or the local databases, and they shouldn't go through the app. They can't have a contract since it's in their nature to change constantly.
+
+####SDKs and other content providers
+I won't take too much to explain this because their implementations aren't standar. Actually, is up to you how to adapt these components as a true, well-defined models. Just make sure you don't use it directly on the View if isn't necessary.
+
+###Presenter
+This will be the class responsible for all the business logic.
