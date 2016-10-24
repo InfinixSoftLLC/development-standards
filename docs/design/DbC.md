@@ -81,6 +81,7 @@ public interface Stack {
      *  @pre o != null
      *  @post !isEmpty()
      *  @post top() == o
+     *  @post post.size = pre.size + 1
      */
     void push(Object o);
 
@@ -138,7 +139,7 @@ public class StackImpl implements Stack{
 }
 ```
 
-Podemos observar que la implementación de la interfaz stack nos queda de una manera simple, clara y concisa, donde realiza su trabajo sin verificar los datos de entrada y cumple con las postcondiciones bajo las precondiciones establecidas.
+Podemos observar que la implementación de la interfaz stack nos queda de una manera simple, clara y concisa. La implementación realiza su trabajo sin verificar los datos de entrada y cumple con las postcondiciones bajo las precondiciones establecidas.
 
 ##Referencias
 
