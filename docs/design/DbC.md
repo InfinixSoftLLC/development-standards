@@ -53,7 +53,7 @@ Hacemos test unitarios. Los test unitarios deben asegurar que un objeto proveedo
 
 - Las tareas que realiza la clase que implementa el contrato son claras y concisas ya que asumimos que las precondiciones se cumplen. Por lo tanto, no agregamos código adicional que valide las entradas de los métodos.
 
-- Nos facilita el debugging. En el momento que encontramos errores, corremos los test unitarios y no los encontramos, los mismos se encuentran en la clase cliente. En otras palabras, la clase cliente no cumplió con las precondiciones especificadas en el contrato. Caso contrario, el error lo tenemos en la clase proveedor. De esta manera, aislamos los errores dándole robustez a nuestro software.
+- Nos facilita la depuración (debug). En el momento que encontramos errores, corremos los test unitarios y no los encontramos, los mismos se encuentran en la clase cliente. En otras palabras, la clase cliente no cumplió con las precondiciones especificadas en el contrato. Caso contrario, el error lo tenemos en la clase proveedor. De esta manera, aislamos los errores dándole robustez a nuestro software.
 
 - Nos otorga una forma estándar de realizar pruebas unitarias.
 
@@ -61,11 +61,11 @@ Hacemos test unitarios. Los test unitarios deben asegurar que un objeto proveedo
 
 - Desarrollamos software Confiable (Ausencia de bugs, aclaro no es infalible, pero nos ayuda a alcanzar ese objetivo). Término confiable lo descomponemos en Correcto (Porque el objeto cumple con la especificación) y robusto (manejo de situaciones anormales).
 
-- DbC nos asegura que las clases que implementen el contrato no van a tener bugs (son correctas) si pasan los test unitarios correctamente.
+- DbC nos asegura que las clases que implementen el contrato no van a tener bugs (son correctas) si pasan los test unitarios satisfactoriamente.
 
 ##Ejemplo básico de aplicación
 
-Ahora vamos a ver un ejemplo básico de [2] para que entendamos la idea principal, tenemos un clase stack donde definimos el contrato de uso de la siguiente manera:
+Ahora vamos a ver un ejemplo básico desarrollado en [2] para que entendamos la idea principal, tenemos un clase stack donde definimos nuestro contrato de la siguiente manera:
 
 Para nuestra clase definimos nuestra invariante del objeto que implemente la interfaz donde definimos que la pila con elementos implica que el método top() nos devuelve un objeto (no null). En el ejemplo se aclara información extra de que no se admiten null objects.
 
