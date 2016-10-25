@@ -21,7 +21,7 @@ Here, we have to take a wide look to what is considered _model_. Maybe your firs
 - Entities
 
 ####Entities
-First of all, let's talk about the last item. For us, the real model will be all the classes named *entities*. These classes will fulfill the contract of an _item_ (see [Design by Contract](http://www.google.com)) and their instances are the objects that we should shove around the entire app. They won't know anything about the DB or the server requests or responses, but they know how to create themselves with a response and how to create a request by themselves.
+First of all, let's talk about the last item. For us, the real model will be all the classes named *entities*. These classes will fulfill the contract of an _item_ (see [Design by Contract](https://github.com/InfinixSoftLLC/development-standards/blob/master/docs/design/DbC.md)) and their instances are the objects that we should shove around the entire app. They won't know anything about the DB or the server requests or responses, but they know how to create themselves with a response and how to create a request by themselves.
 
 ####API clients
 It's almost guaranteed that this will be a [Retrofit REST client](http://square.github.io/retrofit/). This should be classes who are responsible to make the requests to the servers and retrieve the information as a java object. We usually code them as [singletons](https://en.wikipedia.org/wiki/Singleton_pattern), it's better if you see this for yourself in the DemoApp or AndroidTraining.
@@ -34,3 +34,6 @@ I won't take too much to explain this because their implementations aren't stand
 
 ###Presenter
 This will be the class responsible for all the business logic.
+
+
+###View
