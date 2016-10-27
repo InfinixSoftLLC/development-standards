@@ -37,3 +37,5 @@ This will be the class responsible for all the business logic.
 
 
 ###View
+The View will be the all the classes that interact directly with the user, as a dialog, a fragment or an activity. Keep an eye on the las item as we usually use it not as a View, instead we use it as an empty box who is in charge of the app flow.
+The view implements a contract based on what should the user see or do on a set screen. Our main technique for doing this is based on staring at the PSD given and ask yourself: "what will the user expect from this?". Every action you find should be defined as action for your view.
