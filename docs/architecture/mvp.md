@@ -37,5 +37,5 @@ This will be the class responsible for all the business logic.
 
 
 ###View
-From now and forward, we are going to call 'View' to this concept and we are going to call 'android view' to the android class. The View will be the all the classes that interact directly with the user, as a dialog, a fragment or an activity. Keep an eye on the last item as we usually use it not as a View, instead we use it as an empty box who is in charge of the app flow.
+From now and forward, we are going to call 'View' to this concept and we are going to call 'android view' to the android class. The View will be the all the classes that interact directly with the user, as a dialog, a fragment or an activity. Keep an eye on the last item as we usually use it not as a View, instead we use it as an empty box who is in charge of the app flow. The View main responsibility is to handle the user actions and map them to actions for the presenter to understand. It also has to provide the presenter an interface so it can show the user the info requested.
 The view implements a contract based on what should the user see or do on a set screen. Our main technique for doing this is based on staring at the PSD given and ask yourself: "what will the user expect from this?". Every action you find should be defined as action for your view.
